@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sobathidroponik.KontrolActivity"
+    tools:showIn="@layout/activity_kontrol"
+    style="@style/parent.contentLayout"
+    android:background="#00000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Controling \nHidroponik "
+                    style="@style/viewParent.headerText"
+                    android:layout_gravity="bottom"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hero"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="50dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient"
+                            android:padding="15dp"
+                            android:id="@+id/monitor">
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:layout_marginLeft="50dp"
+                                android:src="@drawable/icon_ppm"
+                                style="@style/homeCardImage"/>
+                            <TextView
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Nutrisi" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/nilaippm"
+                                    style="@style/viewParent.headerText.HomeCardTitle"
+                                    android:text="0"
+                                    android:layout_marginTop="30dp"/>
+                                <TextView
+                                    style="@style/viewParent.headerText.HomeCardTitle"
+                                    android:text=" ppm"
+                                    android:layout_marginTop="30dp"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+<!--About                    -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="15dp">
+
+<!--                            <ImageView-->
+<!--                                android:maxHeight="90dp"-->
+<!--                                android:src="@drawable/home_ic_chemistry"-->
+<!--                                style="@style/homeCardImage"/>-->
+
+                                <TextView
+                                    android:id="@+id/textViewSub3Title"
+                                    android:text="Controling"
+                                    style="@style/viewParent.headerText.HomeCardTitle" />
+<!--                            <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:id="@+id/setPPM"-->
+<!--                                />-->
+                            <EditText
+                                android:layout_marginTop="50dp"
+                                android:id="@+id/setPPM"
+                                style="@style/modifiedEditText"
+                                android:hint="PPM"
+                                android:inputType="number"
+                                android:maxLines="1" />
+                            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                                android:id="@+id/btn_submit"
+                                style="@style/backButton"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="100dp"
+                                android:text="Submit"
+                                android:textColorHint="@color/black"
+                                android:layout_marginStart="70dp"
+                                app:initialCornerAngle="20dp"
+                                app:spinning_bar_color="#FFF"
+                                app:spinning_bar_padding="0dp"
+                                app:spinning_bar_width="0dp"
+                                android:layout_marginBottom="10dp"/>
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

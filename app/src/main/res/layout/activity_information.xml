@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sobathidroponik.InformationActivity"
+    tools:showIn="@layout/activity_information"
+    style="@style/parent.contentLayout"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Information \nHidroponik "
+                    style="@style/viewParent.headerText"
+                    android:layout_gravity="bottom"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hero"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+                            <TextView
+                                android:text="Kangkung"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="pH : 5.5 - 6.5"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Suhu : 25 - 28 °C"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="68dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Nutrisi : 1050 - 1400 ppm"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="88dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Kelembaban : 65% - 68%"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+                            <TextView
+                                android:text="Bayam"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="pH : 5.5 - 6.5"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Suhu : 25 - 28 °C"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="68dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Nutrisi : 1050 - 1400 ppm"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="88dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Kelembaban : 65% - 68%"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+                            <TextView
+                                android:text="Pakcoy"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="pH : 7"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Suhu : 25 - 28 °C"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="68dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Nutrisi : 1050 - 1400 ppm"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="88dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Kelembaban : 65% - 68%"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightYellow2"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+                            <TextView
+                                android:text="Selada"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="pH : 6.0 - 7.0"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Suhu : 25 - 28 °C"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="68dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Nutrisi : 540 - 80 ppm"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                            <TextView
+                                android:layout_marginTop="88dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="Kelembaban : 65% - 68%"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

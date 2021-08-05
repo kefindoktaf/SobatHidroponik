@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "806253025706",
+    "firebase_url": "https://hydrotech-52c36-default-rtdb.firebaseio.com",
+    "project_id": "hydrotech-52c36",
+    "storage_bucket": "hydrotech-52c36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806253025706:android:ec3ece18d8b5af613433d3",
+        "android_client_info": {
+          "package_name": "com.example.sobathidroponik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806253025706-8usqbc3s1v3b0kfknli4ikb6rbgqgt5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT3XEFvBLzJq5YCydIkuIvzuSQ9pB2Gg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806253025706-8usqbc3s1v3b0kfknli4ikb6rbgqgt5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806253025706:android:e71f1a8ba25708a53433d3",
+        "android_client_info": {
+          "package_name": "com.halo.loginui2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806253025706-8usqbc3s1v3b0kfknli4ikb6rbgqgt5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT3XEFvBLzJq5YCydIkuIvzuSQ9pB2Gg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806253025706-8usqbc3s1v3b0kfknli4ikb6rbgqgt5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
